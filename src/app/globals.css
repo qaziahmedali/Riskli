@@ -1,0 +1,40 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", system-ui, sans-serif;
+  --font-mono: "Fira Code", "Monaco", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Reusable Component Classes */
+@layer components {
+  .btn-primary {
+    @apply bg-riskliBlue-500 hover:bg-riskliBlue-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-riskliBlue-500 text-riskliBlue-500 hover:bg-riskliBlue-50 px-6 py-3 rounded-xl font-semibold transition-all duration-200;
+  }
+
+  .card-step {
+    @apply bg-white/90 p-6 rounded-2xl shadow-lg text-center transition-all duration-300 hover:shadow-xl;
+  }
+}
