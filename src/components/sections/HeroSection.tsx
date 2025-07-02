@@ -3,11 +3,8 @@ import Image from 'next/image';
 
 export const HeroSection = () => {
   return (
-    <section
-      id='hero'
-      className='relative overflow-hidden bg-white min-h-screen flex items-center'
-    >
-      <div className='relative w-full px-4 sm:px-6 py-8 sm:py-12'>
+    <section id='hero' className='relative overflow-hidden bg-white'>
+      <div className='relative w-full px-4 sm:px-6 py-0'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
           {/* Left Content */}
           <div className='space-y-6 text-center lg:text-left lg:pl-24 md:pl-16 pl-8'>
