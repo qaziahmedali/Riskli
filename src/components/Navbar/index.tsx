@@ -15,12 +15,12 @@ export const Navbar = () => {
 
   return (
     <nav
-      className='bg-white shadow-sm w-full px-4 sm:px-6 py-4 relative overflow-hidden z-50'
+      className='bg-white w-full px-4 sm:px-6 py-12 relative overflow-hidden z-50'
       id='#navbar'
     >
       {/* Curved Blue Background at Bottom - Width reduced */}
       <svg
-        className='absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-[200px] z-0'
+        className='absolute top-0 left-1/2 -translate-x-0 w-1/2 h-[250px] z-0'
         viewBox='0 0 1440 180'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -33,7 +33,7 @@ export const Navbar = () => {
           fillOpacity='1'
         />
       </svg>
-      <div className='w-full flex flex-wrap items-center justify-between relative z-10'>
+      <div className='w-full flex flex-wrap items-center justify-between relative z-10 mt-[-20px]'>
         <div className='flex items-center space-x-2'>
           <Image
             src='/img/Group1.png'
