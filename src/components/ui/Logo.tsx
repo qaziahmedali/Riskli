@@ -1,20 +1,17 @@
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps } from 'next/image';
 
 interface LogoProps extends Omit<ImageProps, 'src' | 'alt'> {
   className?: string;
 }
 
 const LOGO = {
-  src: "/img/Group1.png",
-  alt: "RiskFi Logo",
+  src: '/img/Group1.png',
+  alt: 'Riskli Logo',
   width: 60,
   height: 60,
 } as const;
 
-export const Logo = ({
-  className = '',
-  ...props
-}: LogoProps) => {
+export const Logo = ({ className = '', ...props }: LogoProps) => {
   return (
     <div className={`relative ${className}`}>
       <Image

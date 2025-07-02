@@ -14,7 +14,7 @@ export const HeroSection = () => {
               <span className='text-riskliBlue-600'>Before</span> You Decide
             </h1>
             <p className='text-base sm:text-lg text-black max-w-md mx-auto lg:mx-0'>
-              RiskFi helps you analyze the risk of any property before making a
+              Riskli helps you analyze the risk of any property before making a
               purchase.
             </p>
           </div>

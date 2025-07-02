@@ -37,7 +37,7 @@ export const Navbar = () => {
         <div className='flex items-center space-x-2'>
           <Image
             src='/img/Group1.png'
-            alt='RiskFi Logo'
+            alt='Riskli Logo'
             width={60}
             height={60}
             priority
