@@ -29,10 +29,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className='bg-white w-full pt-4'>
+    <footer className='bg-white w-full pt-4 px-6 sm:px-12'>
       {/* Blue line at the top (capsule + thin line, seamless, thin right section) */}
       <div className='w-full flex items-center mb-6'>
-        <div className='w-24 h-3 bg-[#4FC3F7] rounded-r-full rounded-l-none'></div>
+        <div className='w-24 h-3 bg-[#4FC3F7] rounded-full'></div>
         <div className='flex-1 h-1 bg-[#4FC3F7] rounded-full -ml-px'></div>
       </div>
       {/* Main Footer Content */}
