@@ -83,20 +83,20 @@ export const TESTIMONIALS = [
 export const STEPS: Step[] = [
   {
     id: 1,
-    icon: "/icons/Search.png",
+    icon: "/svg/search.svg",
     title: "Find Your Answer",
     description: "Enter business details and find your answer.",
   },
   {
     id: 2,
-    icon: "/icons/Bar.png",
+    icon: "/svg/barChart.svg",
     title: "AI Risk Analysis",
     description:
       "Get your tailored risk report based on history, industry, location.",
   },
   {
     id: 3,
-    icon: "/icons/Universal.png",
+    icon: "/svg/Network.svg",
     title: "Decide Confidently",
     description: "Use insights to make smart, safe decisions.",
   },
