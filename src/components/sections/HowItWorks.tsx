@@ -4,22 +4,22 @@ import { Step, StepCardProps } from '@/interfaces/step.interface';
 import { STEPS } from '@/utils/constants';
 
 const StepCard: React.FC<StepCardProps> = ({ icon, title, description }) => (
-  <div className='card-step bg-white text-center p-6 rounded-2xl shadow-lg h-full'>
+  <div className='card-step bg-white text-center p-10 rounded-2xl shadow-lg h-full'>
     <div className='flex items-center justify-center mx-auto mb-4'>
-      <div className='w-8 h-8 text-riskliBlue-500 flex items-center justify-center'>
+      <div className='w-14 h-14 text-riskliBlue-500 flex items-center justify-center'>
         <Image
           src={icon}
           alt={`${title} icon`}
-          width={32}
-          height={32}
+          width={56}
+          height={56}
           className='object-contain'
         />
       </div>
     </div>
-    <h3 className='text-xl font-display font-bold text-gray-900 mb-3'>
+    <h3 className='text-2xl font-display font-bold text-gray-900 mb-3'>
       {title}
     </h3>
-    <p className='text-gray-600 leading-relaxed'>{description}</p>
+    <p className='text-lg text-gray-600 leading-relaxed'>{description}</p>
   </div>
 );
 
@@ -39,12 +39,12 @@ export const HowItWorks = () => {
         style={{ pointerEvents: 'none' }}
       >
         <path
-          d='M0,0 Q720,80 1440,40 L1440,1000 L0,1000 Z'
+          d='M0,0 Q720,220 1440,200 L1440,1000 L0,1000 Z'
           fill='#4FC3F7'
           fillOpacity='1'
         />
       </svg>
-      <div className='relative w-full px-4 sm:px-6 max-w-6xl mx-auto z-10 py-32'>
+      <div className='relative w-full px-4 sm:px-6 max-w-6xl mx-auto z-10 py-32 pt-40'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl font-display font-semibold text-black mb-4'>
             How It Works
