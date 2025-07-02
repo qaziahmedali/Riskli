@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className='bg-white shadow-sm px-4 py-4 relative overflow-hidden'
+      className='bg-white shadow-sm w-full px-4 sm:px-6 py-4 relative overflow-hidden'
       id='#navbar'
     >
       {/* Top Curved Blue Background */}
@@ -33,7 +33,7 @@ export const Navbar = () => {
           fillOpacity='1'
         />
       </svg>
-      <div className='max-w-8xl mx-auto flex items-center justify-between relative z-10'>
+      <div className='w-full flex flex-wrap items-center justify-between relative z-10'>
         <div className='flex items-center space-x-2'>
           <Image
             src='/img/Group1.png'
