@@ -19,7 +19,7 @@ export const DownloadSection = () => {
         {/* Full Width Image */}
         <div className="relative w-full mb-6 md:mb-8 overflow-hidden">
           <Image
-            src="/img/Mockups.png"
+            src="/svg/Mockups.svg"
             alt="Riskli App Screenshot"
             width={1200}
             height={600}
