@@ -1,8 +1,40 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+
+const TESTIMONIALS = [
+  {
+    image: '/img/testimonials.jpg',
+    name: 'Zara M.',
+    role: 'Small Business Owner',
+    text: "Before Riskli, I Almost Signed A Lease On A Commercial Space That Had A History Of Business Closures In The Area. Riskli's AI Flagged It Instantly, And I Chose A Better Location. It Saved Me Thousands.",
+    stars: 5,
+  },
+  {
+    image: '/img/Feature1.png',
+    name: 'Ali R.',
+    role: 'Real Estate Investor',
+    text: "Riskli's insights helped me avoid a high-risk property. The analysis was spot on and saved me a lot of trouble!",
+    stars: 5,
+  },
+  {
+    image: '/img/Feature2.png',
+    name: 'Sara K.',
+    role: 'Home Buyer',
+    text: 'I felt confident buying my first home after using Riskli. The risk report was easy to understand and very helpful.',
+    stars: 5,
+  },
+];
 
 const TestimonialsSection = () => {
+  const [index, setIndex] = useState(0);
+  const testimonial = TESTIMONIALS[index];
+
+  const handlePrev = () =>
+    setIndex((prev) => (prev === 0 ? TESTIMONIALS.length - 1 : prev - 1));
+  const handleNext = () =>
+    setIndex((prev) => (prev === TESTIMONIALS.length - 1 ? 0 : prev + 1));
+
   return (
     <section
       className='py-20 bg-white relative overflow-hidden'
@@ -18,69 +50,99 @@ const TestimonialsSection = () => {
 
         <div className='relative max-w-5xl mx-auto'>
           <div className='flex flex-col md:flex-row gap-8 items-center'>
-            {/* Left side - User image */}
-            <div className='w-40 h-40 rounded-2xl overflow-hidden shadow-lg flex-shrink-0'>
-              <Image
-                src='/img/testimonials.jpg'
-                alt='Zara M.'
-                width={160}
-                height={160}
-                className='w-full h-full object-cover'
-              />
-            </div>
-
-            {/* Right side - Content */}
-            <div className=''>
-              {/* Large quotation mark */}
-              <div className='absolute -left-16 -top-20 text-riskliBlue-500'>
+            {/* Left side - User image with quote icon floating above */}
+            <div className='relative w-72 h-72 flex-shrink-0'>
+              {/* Quote icon floating above image */}
+              <div className='absolute -top-16 -left-16 z-20'>
                 <Image
                   src='/icons/Quote.png'
                   alt='Quote icon'
-                  width={120}
-                  height={120}
-                  className='w-26 h-26'
+                  width={100}
+                  height={100}
+                  className='w-24 h-24'
                 />
               </div>
+              <div className='w-72 h-72 rounded-2xl overflow-hidden shadow-lg'>
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  width={288}
+                  height={288}
+                  className='w-full h-full object-cover'
+                />
+              </div>
+            </div>
 
+            {/* Right side - Content */}
+            <div className='relative flex-1'>
               {/* Quote and Navigation */}
               <div className='flex gap-6 items-start'>
                 <div className='flex-1'>
                   <p className='text-gray-900 text-lg sm:text-xl leading-relaxed tracking-normal mb-6 relative z-10'>
-                    "Before Riskli, I Almost Signed A Lease On A Commercial
-                    Space That Had A History Of Business Closures In The Area.
-                    Riskli's AI Flagged It Instantly, And I Chose A Better
-                    Location. It Saved Me Thousands."
+                    <span className='block text-2xl sm:text-3xl font-normal mb-6'>
+                      “{testimonial.text}”
+                    </span>
                   </p>
 
                   {/* Author info */}
-                  <div className='flex flex-col md:flex-row md:items-center gap-2'>
-                    <p className='font-semibold text-gray-900'>Zara M.,</p>
-                    <p className='text-gray-600'>Small Business Owner</p>
+                  <div className='flex flex-col md:flex-row md:items-center gap-4 mb-4'>
+                    <span className='font-bold text-xl text-black'>
+                      – {testimonial.name}
+                    </span>
+                    <span className='text-lg text-gray-500'>
+                      {testimonial.role}
+                    </span>
                   </div>
                 </div>
 
                 {/* Vertical Navigation Arrows */}
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-4'>
                   <button
-                    className='bg-riskliBlue-100 hover:bg-riskliBlue-400 text-white rounded-full p-2 transition-colors w-10 h-10 flex items-center justify-center' // Added width, height, and centering
+                    onClick={handlePrev}
+                    className='bg-riskliBlue-100 hover:bg-riskliBlue-200 text-riskliBlue-500 rounded-full flex items-center justify-center w-12 h-12 transition-colors'
                     aria-label='Previous testimonial'
                   >
-                    <span className='text-riskliBlue-500 text-xl'>→</span>
+                    <svg
+                      className='w-6 h-6 mx-auto my-auto'
+                      fill='none'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      viewBox='0 0 24 24'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M15 19l-7-7 7-7'
+                      />
+                    </svg>
                   </button>
                   <button
-                    className='bg-gray-100 hover:bg-gray-400 text-white rounded-full p-2 transition-colors w-10 h-10 flex items-center justify-center' // Matched styling with the first button
+                    onClick={handleNext}
+                    className='bg-gray-100 hover:bg-gray-300 text-gray-500 rounded-full flex items-center justify-center w-12 h-12 transition-colors'
                     aria-label='Next testimonial'
                   >
-                    <span className='text-white text-xl'>←</span>
+                    <svg
+                      className='w-6 h-6 mx-auto my-auto'
+                      fill='none'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      viewBox='0 0 24 24'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M9 5l7 7-7 7'
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
 
               {/* Stars */}
-              <div className='flex gap-1'>
-                {[1, 2, 3, 4, 5].map((star) => (
+              <div className='flex gap-2 mb-2'>
+                {[...Array(testimonial.stars)].map((_, i) => (
                   <svg
-                    key={star}
+                    key={i}
                     className='w-5 h-5 text-yellow-400'
                     fill='currentColor'
                     viewBox='0 0 20 20'
