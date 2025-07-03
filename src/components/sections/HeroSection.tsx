@@ -173,7 +173,7 @@ export const HeroSection = () => {
                 width={200}
                 height={416}
                 priority
-                className="drop-shadow-xl w-[160px] sm:w-[200px] lg:w-[250px]"
+                className="w-[160px] sm:w-[200px] lg:w-[250px]"
               />
             </div>
           </div>
