@@ -44,7 +44,7 @@ export const FEATURES = [
 export const WHY_US_DATA = [
   {
     id: 1,
-    icon: "/icons/Vector.png",
+    icon: "/svg/money.svg",
     title: "Avoid Wasting Money",
     description: "Saved me from buying a risky location.",
     colorBorder: "border-red-500",
@@ -52,7 +52,7 @@ export const WHY_US_DATA = [
   },
   {
     id: 2,
-    icon: "/icons/Warning.png",
+    icon: "/svg/warning.svg",
     title: "Stay Safe From Scams",
     description: "AI gave me better confidence.",
     colorBorder: "border-purple-500",
@@ -60,7 +60,7 @@ export const WHY_US_DATA = [
   },
   {
     id: 3,
-    icon: "/icons/Brain.png",
+    icon: "/svg/brain.svg",
     title: "Make Informed Decisions",
     description: "It was simple, clear, and fast.",
     colorBorder: "border-yellow-500",
