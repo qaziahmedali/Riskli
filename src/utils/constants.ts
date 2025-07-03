@@ -48,6 +48,8 @@ export const WHY_US_DATA = [
     title: "Avoid Wasting Money",
     description: "Saved me from buying a risky location.",
     colorBorder: "border-red-500",
+    bgGradient: "bg-gradient-to-r from-white to-red-100",
+    bgSvg: "/svg/red-subtract.svg",
   },
   {
     id: 2,
@@ -55,6 +57,8 @@ export const WHY_US_DATA = [
     title: "Stay Safe From Scams",
     description: "AI gave me better confidence.",
     colorBorder: "border-purple-500",
+    bgGradient: "bg-gradient-to-r from-white to-purple-100",
+    bgSvg: "/svg/papule-subtract.svg",
   },
   {
     id: 3,
@@ -62,6 +66,8 @@ export const WHY_US_DATA = [
     title: "Make Informed Decisions",
     description: "It was simple, clear, and fast.",
     colorBorder: "border-yellow-500",
+    bgGradient: "bg-gradient-to-r from-white to-yellow-100",
+    bgSvg: "/svg/yellow-subtract.svg",
   },
 ];
 
