@@ -5,11 +5,11 @@ import WhyUs from "@/components/sections/WhyUs";
 import TestimonialsSection from "@/components/sections/Testimonials";
 import { Download } from "lucide-react";
 import DownloadSection from "@/components/sections/DownloadSection";
-import Footer from "@/components/sections/Footer";
+import Footer from "@/components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <HowItWorks />
