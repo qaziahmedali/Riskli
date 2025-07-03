@@ -168,7 +168,7 @@ export const HeroSection = () => {
             {/* Phone image container (centered above circles) */}
             <div className="relative z-10 flex items-center justify-center">
               <Image
-                src="/img/Rectangle.png"
+                src="/svg/Rectangle.svg"
                 alt="Phone Mockup"
                 width={200}
                 height={416}
