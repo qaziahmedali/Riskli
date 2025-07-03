@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { WHY_US_DATA } from "@/utils/constants";
 
@@ -16,36 +15,33 @@ const WhyUsCard = ({
   bgGradient: string;
 }) => {
   return (
-    <div className="relative w-full h-[380px]">
-      {/* Gradient background box */}
+    <div className="relative w-full h-[320px]">
+      {/* Gradient background box - adjusted to be more contained */}
       <div
-        className={`absolute right-0 bottom-0 w-[60%] h-[70%] ${bgGradient} rounded-xl border-4 ${colorBorder}`}
+        className={`absolute right-0 bottom-0 w-[75%] h-[75%] ${bgGradient} rounded-xl border-4 ${colorBorder}`}
       ></div>
 
-      {/* White card with image */}
+      {/* White card with image - now slightly overlapping the gradient */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[85%] h-[85%] relative">
+        <div className="mt-8 relative">
+          {" "}
+          {/* Slightly wider white card */}
           <Image
             src="/img/RiskliCard.png"
             alt="Card background"
-            fill
             className="object-contain drop-shadow-lg"
             priority
+            width={320}
+            height={320}
           />
-
           {/* Centered content container */}
-          <div className="absolute inset-0 left-0 right-0 flex flex-col items-center justify-center text-center z-10">
-            {/* Icon */}
-            <div className="relative w-8 h-8 mb-4 ">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 p-4">
+            <div className="relative w-10 h-10 mb-4">
               <Image src={icon} alt={title} fill className="object-contain" />
             </div>
-
-            {/* Text content - centered */}
-            <div className="flex flex-col items-center justify-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {title}
-              </h3>
-              <p className="text-gray-600 text-sm">{description}</p>
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+              <p className="text-gray-600 text-sm max-w-[80%]">{description}</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 export const HeroSection = () => {
   return (
@@ -24,24 +24,22 @@ export const HeroSection = () => {
 
           {/* Right Content - Phone Mockup */}
           <div className="relative flex justify-center items-center min-h-[380px]">
-            {/* Large Outer Blue Circle */}
+            {/* Large Outer Blue Circle - Reduced size */}
             <div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] sm:w-[440px] sm:h-[440px] lg:w-[520px] lg:h-[520px] rounded-full bg-riskliBlue-100 opacity-50 z-0 blur-[2px]"
-              style={{
-                boxShadow: "0 0 120px 40px #4FC3F722",
-              }}
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] lg:w-[440px] lg:h-[440px] rounded-full bg-riskliBlue-50 opacity-50 z-0 blur-[2px]"
+              style={{}}
             ></div>
-            {/* Inner Blue Circle */}
+
+            {/* Inner Blue Circle - Increased size */}
             <div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[380px] lg:h-[380px] rounded-full bg-riskliBlue-200 opacity-60 z-0"
-              style={{
-                boxShadow: "0 0 80px 20px #4FC3F733",
-              }}
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[400px] lg:h-[400px] rounded-full bg-riskliBlue-100 opacity-80 z-0"
+              style={{}}
             ></div>
+
             {/* Phone image container (centered above circles) */}
             <div className="relative z-10 flex items-center justify-center">
               <Image
-                src="/svg/Rectangle.svg"
+                src="/img/Rectangle.png"
                 alt="Phone Mockup"
                 width={200}
                 height={416}

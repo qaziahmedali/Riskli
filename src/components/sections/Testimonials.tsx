@@ -32,20 +32,20 @@ const TestimonialsSection = () => {
             {/* Right side - Content */}
             <div className="">
               {/* Large quotation mark */}
-              <div className="absolute -left-2 -top-16 text-riskliBlue-500 opacity-10">
+              <div className="absolute -left-16 -top-20 text-riskliBlue-500">
                 <Image
                   src="/icons/Quote.png"
                   alt="Quote icon"
-                  width={100}
-                  height={100}
-                  className="w-20 h-20"
+                  width={120}
+                  height={120}
+                  className="w-26 h-26"
                 />
               </div>
 
               {/* Quote and Navigation */}
               <div className="flex gap-6 items-start">
                 <div className="flex-1">
-                  <p className="text-gray-700 text-lg leading-relaxed mb-6 relative z-10">
+                  <p className="text-gray-900 text-lg sm:text-xl leading-relaxed tracking-normal mb-6 relative z-10">
                     "Before Riskli, I Almost Signed A Lease On A Commercial
                     Space That Had A History Of Business Closures In The Area.
                     Riskli's AI Flagged It Instantly, And I Chose A Better
@@ -62,16 +62,16 @@ const TestimonialsSection = () => {
                 {/* Vertical Navigation Arrows */}
                 <div className="flex flex-col gap-2">
                   <button
-                    className="bg-riskliBlue-200 hover:bg-riskliBlue-600 text-white rounded-full p-2 transition-colors"
+                    className="bg-riskliBlue-100 hover:bg-riskliBlue-400 text-white rounded-full p-2 transition-colors w-10 h-10 flex items-center justify-center" // Added width, height, and centering
                     aria-label="Previous testimonial"
                   >
-                    →
+                    <span className="text-riskliBlue-500 text-xl">→</span>
                   </button>
                   <button
-                    className="bg-riskliBlue-200 hover:bg-riskliBlue-600 text-white rounded-full p-2 transition-colors"
+                    className="bg-gray-100 hover:bg-gray-400 text-white rounded-full p-2 transition-colors w-10 h-10 flex items-center justify-center" // Matched styling with the first button
                     aria-label="Next testimonial"
                   >
-                    ←
+                    <span className="text-white text-xl">←</span>
                   </button>
                 </div>
               </div>

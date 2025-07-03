@@ -1,5 +1,4 @@
 import { Step } from "@/interfaces/step.interface";
-import { Icons } from "./icons";
 
 export const FEATURES = [
   {
@@ -84,20 +83,20 @@ export const TESTIMONIALS = [
 export const STEPS: Step[] = [
   {
     id: 1,
-    icon: Icons.search,
+    icon: "/icons/Search.png",
     title: "Find Your Answer",
     description: "Enter business details and find your answer.",
   },
   {
     id: 2,
-    icon: Icons.barChart,
+    icon: "/icons/Bar.png",
     title: "AI Risk Analysis",
     description:
       "Get your tailored risk report based on history, industry, location.",
   },
   {
     id: 3,
-    icon: Icons.network,
+    icon: "/icons/Universal.png",
     title: "Decide Confidently",
     description: "Use insights to make smart, safe decisions.",
   },
