@@ -57,8 +57,11 @@ const TestimonialsSection = () => {
               {/* Quote and Navigation */}
               <div className="flex gap-3 sm:gap-6 items-start">
                 <div className="flex-1">
-                  <p className="text-gray-900 text-base sm:text-lg md:text-xl leading-relaxed tracking-normal mb-4 sm:mb-6 relative z-10">
-                    <span className="block text-xl sm:text-2xl md:text-3xl font-normal mb-4 sm:mb-6">
+                  <p className="text-gray-900 text-base sm:text-lg md:text-xl mb-4 sm:mb-6 relative z-10">
+                    <span
+                      className="block text-xl md:text-2xl font-normal mb-4 sm:mb-6 tracking-widest"
+                      style={{ lineHeight: "2.5rem" }}
+                    >
                       "{testimonial.text}"
                     </span>
                   </p>
