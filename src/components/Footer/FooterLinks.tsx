@@ -1,9 +1,9 @@
 // FooterLinks.tsx
-"use client";
+'use client';
 
-import { FOOTER_LINKS } from "@/utils/constants";
-import React from "react";
-import { useActiveLink } from "@/context/useActiveLink";
+import { FOOTER_LINKS } from '@/utils/constants';
+import React from 'react';
+import { useActiveLink } from '@/context/useActiveLink';
 
 interface FooterLinksProps {
   scrollToSection: (
@@ -16,7 +16,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ scrollToSection }) => {
   const { activeLink, setActiveLink } = useActiveLink();
 
   return (
-    <div className="flex flex-wrap justify-center gap-8 font-medium">
+    <div className='flex flex-wrap justify-center gap-8 font-medium'>
       {FOOTER_LINKS.map((item) => (
         <a
           key={item.label}
@@ -28,7 +28,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ scrollToSection }) => {
           className={`cursor-pointer transition-colors ${
             activeLink === item.label
               ? "text-riskliBlue-600 after:content-[''] after:block after:w-full after:h-0.5 after:bg-riskliBlue-500"
-              : "text-black hover:text-riskliBlue-600"
+              : 'text-black hover:text-riskliBlue-600'
           }`}
         >
           {item.label}
