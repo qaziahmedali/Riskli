@@ -39,7 +39,7 @@ const WhyUsCard = ({
   return (
     <div className="relative w-full flex items-center justify-center">
       {/* Main container with adjusted sizes */}
-      <div className="relative w-[140px] h-[180px] sm:w-[150px] sm:h-[190px] md:w-[180px] md:h-[220px] lg:w-[220px] lg:h-[260px] xl:w-[274px] xl:h-[307px]">
+      <div className="relative w-[180px] h-[220px] sm:w-[200px] sm:h-[240px] md:w-[210px] md:h-[250px] lg:w-[220px] lg:h-[260px] xl:w-[274px] xl:h-[307px]">
         {/* Border box with consistent visibility */}
         <div
           className="absolute w-full h-full border-4"
@@ -53,7 +53,7 @@ const WhyUsCard = ({
 
         {/* White card with adjusted positioning */}
         <div
-          className="absolute -top-3 -left-1.5 w-[160px] h-[210px] sm:-top-3 sm:-left-2 sm:w-[170px] sm:h-[215px] md:-top-4 md:-left-3.5 md:w-[210px] md:h-[255px] lg:-top-5 lg:-left-5 lg:w-[250px] lg:h-[290px] xl:-top-7 xl:-left-7 xl:w-[315px] xl:h-[345px] 2xl:-top-7 2xl:-left-8 2xl:w-[320px] 2xl:h-[350px]  z-10"
+          className="absolute -top-4 -left-3.5 w-[205px] h-[250px] sm:-top-4 sm:-left-4 sm:w-[230px] sm:h-[270px] md:-top-5 md:-left-4 md:w-[240px] md:h-[280px] lg:-top-5 lg:-left-5 lg:w-[250px] lg:h-[290px] xl:-top-7 xl:-left-7 xl:w-[315px] xl:h-[345px] 2xl:-top-7 2xl:-left-8 2xl:w-[320px] 2xl:h-[350px]  z-10"
           style={{
             backgroundImage: `url('${backgroundImage}')`,
             backgroundSize: "110% 110%",
@@ -70,7 +70,7 @@ const WhyUsCard = ({
               {title}
             </h3>
 
-            <p className="text-black max-w-[100px] sm:max-w-xs text-[10px] sm:text-xs md:text-sm lg:text-base font-[450] leading-tight sm:leading-relaxed">
+            <p className="text-black max-w-[100px] sm:max-w-[150px] lg:max-w-xs text-[10px] sm:text-xs md:text-sm lg:text-base font-[450] leading-tight sm:leading-relaxed">
               {description}
             </p>
           </div>
@@ -85,7 +85,7 @@ const WhyUs = () => {
     <section className="py-6 sm:py-8 md:py-10 lg:py-12 xl:py-16" id="why-us">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-5 lg:px-8">
         <div className="text-center mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-12">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-1 sm:mb-2 md:mb-3">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-5">
             Why Use Riskli?
           </h2>
         </div>

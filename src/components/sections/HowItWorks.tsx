@@ -46,9 +46,9 @@ export const HowItWorks = () => {
           fillOpacity="1"
         />
       </svg>
-      <div className="relative w-full px-4 sm:px-6 max-w-6xl mx-auto z-10 py-16 sm:py-24 md:py-32 pt-24 sm:pt-32 md:pt-40">
+      <div className="relative w-full px-4 sm:px-6 max-w-6xl mx-auto z-10 py-16 pb-5  md:py-16 pt-36 md:pt-40">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-3xl md:text-4xl font-display font-semibold text-black mb-2 sm:mb-4">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-display font-semibold text-black mb-2 sm:mb-4 mt-5">
             How It Works
           </h2>
         </div>

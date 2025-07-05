@@ -30,7 +30,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className="absolute right-[25%] bottom-[25%] hidden sm:block">
+        <div className="absolute right-[25%] bottom-[25%]">
           <Image
             src="/icons/Lock.png"
             width={24}
@@ -90,7 +90,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className="absolute left-[28%] bottom-[30%] opacity-40 hidden md:block">
+        <div className="absolute left-[28%] bottom-[30%] opacity-40 hidden lg:block">
           <Image
             src="/icons/Wave.png"
             width={80}
@@ -100,7 +100,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className="absolute left-[18%] bottom-[40%] w-6 h-6 border-2 border-gray-200 rounded-full opacity-60 hidden lg:block"></div>
+        <div className="absolute left-[18%] bottom-[40%] w-6 h-6 border-2 border-gray-200 rounded-full opacity-60 hidden xl:block"></div>
 
         <div className="absolute right-[37%] bottom-[50%] w-6 h-6 border-2 border-gray-200 rounded-full opacity-60 hidden lg:block"></div>
 
@@ -124,7 +124,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className="absolute right-[50%] top-[10%] opacity-30">
+        <div className="absolute right-[50%] top-[10%] opacity-30 hidden lg:block">
           <Image
             src="/icons/Security.png"
             width={45}
@@ -144,7 +144,7 @@ export const HeroSection = () => {
               <span className="text-riskliBlue-600 relative">
                 Before
                 {/* Horizontal line below "Before" */}
-                <div className="absolute bottom-0 left-18 w-24 h-0.5 bg-gray-200"></div>
+                <div className="absolute bottom-0 left-18 w-24 h-0.5 bg-gray-200 hidden md:block"></div>
               </span>{" "}
               You Decide
             </h1>

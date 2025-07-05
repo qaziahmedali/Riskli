@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
                     className="bg-riskliBlue-100 hover:bg-riskliBlue-200 text-riskliBlue-300 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
                   >
                     <Image
-                      src="/icons/LeftArrow.png"
+                      src="/svg/LeftArrow.svg"
                       alt="Previous testimonial"
                       width={15}
                       height={15}
@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
                     className="bg-gray-100 hover:bg-gray-300 text-gray-300 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
                   >
                     <Image
-                      src="/icons/RightArrow.png"
+                      src="/svg/RightArrow.svg"
                       alt="Next testimonial"
                       width={15}
                       height={15}
