@@ -1,40 +1,15 @@
-import React from 'react';
-import { NavLink } from './NavLink';
+"use client";
 
-interface DesktopNavProps {
-  activeLink: string;
-  onNavClick: (link: string) => void;
-}
+import React from "react";
+import { NAV_LINKS } from "@/utils/constants";
+import { NavLink } from "./NavLink";
 
-export const DesktopNav: React.FC<DesktopNavProps> = ({ activeLink, onNavClick }) => (
-  <div className="hidden md:flex items-center space-x-8">
-    <NavLink
-      href="#"
-      active={activeLink === 'Home'}
-      onClick={() => onNavClick('Home')}
-    >
-      Home
-    </NavLink>
-    <NavLink
-      href="#features"
-      active={activeLink === 'Features'}
-      onClick={() => onNavClick('Features')}
-    >
-      Features
-    </NavLink>
-    <NavLink
-      href="#why-us"
-      active={activeLink === 'Why Us'}
-      onClick={() => onNavClick('Why Us')}
-    >
-      Why Us
-    </NavLink>
-    <NavLink
-      href="#testimonials"
-      active={activeLink === 'Testimonials'}
-      onClick={() => onNavClick('Testimonials')}
-    >
-      Testimonials
-    </NavLink>
-  </div>
-);
+export const DesktopNav: React.FC = () => {
+  return (
+    <div className="hidden md:flex space-x-8">
+      {NAV_LINKS.map((link) => (
+        <NavLink key={link.label} href={link.href} label={link.label} />
+      ))}
+    </div>
+  );
+};

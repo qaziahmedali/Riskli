@@ -1,26 +1,16 @@
+"use client";
+
 import React from "react";
 import { X } from "lucide-react";
 import { NavLink } from "./NavLink";
 
 interface MobileMenuProps {
   isOpen: boolean;
-  activeLink: string;
   onClose: () => void;
-  onNavClick: (link: string) => void;
 }
 
-export const MobileMenu: React.FC<MobileMenuProps> = ({
-  isOpen,
-  activeLink,
-  onClose,
-  onNavClick,
-}) => {
+export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
-
-  const handleNavClick = (link: string) => {
-    onNavClick(link);
-    onClose();
-  };
 
   return (
     <>
@@ -44,38 +34,15 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         </div>
 
         <div className="flex-1 overflow-y-auto flex flex-col space-y-4">
-          <NavLink
-            href="#"
-            active={activeLink === "Home"}
-            onClick={() => handleNavClick("Home")}
-            mobile
-          >
-            Home
-          </NavLink>
-          <NavLink
-            href="#features"
-            active={activeLink === "Features"}
-            onClick={() => handleNavClick("Features")}
-            mobile
-          >
-            Features
-          </NavLink>
-          <NavLink
-            href="#why-us"
-            active={activeLink === "Why Us"}
-            onClick={() => handleNavClick("Why Us")}
-            mobile
-          >
-            Why Us
-          </NavLink>
+          <NavLink href="#" label="Home" mobile onClick={onClose} />
+          <NavLink href="#features" label="Features" mobile onClick={onClose} />
+          <NavLink href="#why-us" label="Why Us" mobile onClick={onClose} />
           <NavLink
             href="#testimonials"
-            active={activeLink === "Testimonials"}
-            onClick={() => handleNavClick("Testimonials")}
+            label="Testimonials"
             mobile
-          >
-            Testimonials
-          </NavLink>
+            onClick={onClose}
+          />
           <button
             type="button"
             className="mt-4 w-full bg-white text-riskliBlue-600 px-4 py-2 rounded-full font-medium text-lg transition-all duration-200 shadow-md hover:bg-gray-100"
@@ -88,3 +55,5 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
     </>
   );
 };
+
+export default MobileMenu;

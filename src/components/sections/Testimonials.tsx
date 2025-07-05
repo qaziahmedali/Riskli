@@ -1,4 +1,5 @@
 "use client";
+
 import { TESTIMONIALS } from "@/utils/constants";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -38,7 +39,7 @@ const TestimonialsSection = () => {
                   alt="Quote icon"
                   width={100}
                   height={100}
-                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-24"
                 />
               </div>
               <div className="w-full h-full rounded-2xl overflow-hidden shadow-lg">
@@ -78,44 +79,30 @@ const TestimonialsSection = () => {
                 </div>
 
                 {/* Vertical Navigation Arrows - Smaller on mobile */}
-                <div className="flex flex-col gap-2 sm:gap-4">
+                <div className="flex flex-col mt-16 gap-4 sm:gap-8">
                   <button
                     onClick={handlePrev}
-                    className="bg-riskliBlue-100 hover:bg-riskliBlue-200 text-riskliBlue-500 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
-                    aria-label="Previous testimonial"
+                    className="bg-riskliBlue-100 hover:bg-riskliBlue-200 text-riskliBlue-300 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
                   >
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 mx-auto my-auto"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 19l-7-7 7-7"
-                      />
-                    </svg>
+                    <Image
+                      src="/icons/LeftArrow.png"
+                      alt="Previous testimonial"
+                      width={15}
+                      height={15}
+                      className="w-3 h-3"
+                    />
                   </button>
                   <button
                     onClick={handleNext}
-                    className="bg-gray-100 hover:bg-gray-300 text-gray-500 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
-                    aria-label="Next testimonial"
+                    className="bg-gray-100 hover:bg-gray-300 text-gray-300 rounded-full flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 transition-colors"
                   >
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 mx-auto my-auto"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                    <Image
+                      src="/icons/RightArrow.png"
+                      alt="Next testimonial"
+                      width={15}
+                      height={15}
+                      className="w-3 h-3"
+                    />
                   </button>
                 </div>
               </div>

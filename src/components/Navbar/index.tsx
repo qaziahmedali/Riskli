@@ -1,25 +1,19 @@
 "use client";
+
 import React, { useState } from "react";
 import { DesktopNav } from "./DesktopNav";
 import { MobileMenu } from "./MobileMenu";
 import { Menu } from "lucide-react";
-import Image from "next/image";
 import Logo from "../ui/Logo";
 
 export const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleNavClick = (link: string) => {
-    setActiveLink(link);
-  };
 
   return (
     <nav
       className="bg-white w-full px-4 sm:px-6 py-16 relative overflow-hidden z-50"
       id="#navbar"
     >
-      {/* Curved Blue Background at Bottom - Width reduced */}
       <svg
         className="absolute top-0 left-1/2 -translate-x-0 w-1/2 h-[250px] z-0 hidden md:flex"
         viewBox="0 0 1440 180"
@@ -49,7 +43,7 @@ export const Navbar = () => {
           </button>
         </div>
 
-        <DesktopNav activeLink={activeLink} onNavClick={handleNavClick} />
+        <DesktopNav />
 
         <div className="hidden md:block relative">
           <button
@@ -60,13 +54,7 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        <MobileMenu
-          isOpen={isMenuOpen}
-          activeLink={activeLink}
-          onClose={() => setIsMenuOpen(false)}
-          onNavClick={handleNavClick}
-        />
+        <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       </div>
     </nav>
   );

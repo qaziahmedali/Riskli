@@ -30,7 +30,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-white px-6 pt-4 sm:px-12">
-      <div className="mb-6 flex w-full items-center">
+      <div className="mb-6 flex w-full items-center px-8">
         <div className="h-3 w-24 rounded-full bg-[#4FC3F7]"></div>
         <div className="-ml-px h-1 flex-1 rounded-full bg-[#4FC3F7]"></div>
       </div>

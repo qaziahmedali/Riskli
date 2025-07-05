@@ -48,6 +48,7 @@ export const WHY_US_DATA = [
     title: "Avoid Wasting Money",
     description: "Saved me from buying a risky location.",
     colorBorder: "border-red-500",
+    backgroundImage: "/img/RiskliCard.png",
   },
   {
     id: 2,
@@ -55,6 +56,7 @@ export const WHY_US_DATA = [
     title: "Stay Safe From Scams",
     description: "AI gave me better confidence.",
     colorBorder: "border-purple-500",
+    backgroundImage: "/img/RiskliCard2.png",
   },
   {
     id: 3,
@@ -62,6 +64,7 @@ export const WHY_US_DATA = [
     title: "Make Informed Decisions",
     description: "It was simple, clear, and fast.",
     colorBorder: "border-yellow-500",
+    backgroundImage: "/img/RiskliCard3.png",
   },
 ];
 
@@ -110,13 +113,6 @@ export const STEPS: Step[] = [
     description: "Use insights to make smart, safe decisions.",
   },
 ];
-export const FOOTER_LINKS = [
-  { href: "#", sectionId: "", label: "Home" },
-  { href: "#features", sectionId: "features", label: "Features" },
-  { href: "#why-us", sectionId: "why-us", label: "Why Us" },
-  { href: "#testimonials", sectionId: "testimonials", label: "Testimonials" },
-];
-
 export const SOCIAL_LINKS = [
   {
     href: "#",
@@ -139,4 +135,17 @@ export const SOCIAL_LINKS = [
     width: 20,
     height: 20,
   },
+];
+export const NAV_LINKS = [
+  { href: "#", label: "Home", sectionId: "" },
+  { href: "#features", label: "Features", sectionId: "features" },
+  { href: "#why-us", label: "Why Us", sectionId: "why-us" },
+  { href: "#testimonials", label: "Testimonials", sectionId: "testimonials" },
+];
+
+export const FOOTER_LINKS = [
+  { href: "#", label: "Home", sectionId: "" },
+  { href: "#features", label: "Features", sectionId: "features" },
+  { href: "#why-us", label: "Why Us", sectionId: "why-us" },
+  { href: "#testimonials", label: "Testimonials", sectionId: "testimonials" },
 ];
