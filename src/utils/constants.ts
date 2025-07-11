@@ -56,7 +56,7 @@ export const WHY_US_DATA = [
     title: "Stay Safe From Scams",
     description: "AI gave me better confidence.",
     colorBorder: "border-purple-500",
-    backgroundImage: "/img/RiskliCard2.png",
+    backgroundImage: "/img/RiskliCard3.png",
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ export const WHY_US_DATA = [
     title: "Make Informed Decisions",
     description: "It was simple, clear, and fast.",
     colorBorder: "border-yellow-500",
-    backgroundImage: "/img/RiskliCard3.png",
+    backgroundImage: "/img/RiskliCard2.png",
   },
 ];
 

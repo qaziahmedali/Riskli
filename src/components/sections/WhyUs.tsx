@@ -53,7 +53,7 @@ const WhyUsCard = ({
 
         {/* White card with adjusted positioning */}
         <div
-          className="absolute -top-4 -left-3.5 w-[205px] h-[250px] sm:-top-4 sm:-left-4 sm:w-[230px] sm:h-[270px] md:-top-5 md:-left-4 md:w-[240px] md:h-[280px] lg:-top-5 lg:-left-5 lg:w-[250px] lg:h-[290px] xl:-top-7 xl:-left-7 xl:w-[315px] xl:h-[345px] 2xl:-top-7 2xl:-left-8 2xl:w-[320px] 2xl:h-[350px]  z-10"
+          className="absolute -top-4 -left-3.5 w-[205px] h-[250px] sm:-top-4 sm:-left-4 sm:w-[230px] sm:h-[270px] md:-top-5 md:-left-4 md:w-[240px] md:h-[280px] lg:-top-5 lg:-left-5 lg:w-[250px] lg:h-[290px] xl:-top-7 xl:-left-7 xl:w-[315px] xl:h-[345px] 2xl:-top-8 2xl:-left-8 2xl:w-[320px] 2xl:h-[350px]  z-10"
           style={{
             backgroundImage: `url('${backgroundImage}')`,
             backgroundSize: "110% 110%",
@@ -61,16 +61,21 @@ const WhyUsCard = ({
           }}
         >
           {/* Card content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-2 sm:p-3 md:p-4 lg:p-6">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-2 sm:p-3 md:p-4 lg:p-6 space-y-2">
             <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-9 xl:h-9 mb-1 sm:mb-2 md:mb-3 lg:mb-4 relative">
-              <Image src={icon} alt={title} fill className="object-contain" />
+              <Image
+                src={icon}
+                alt={title}
+                fill
+                className="object-contain text-riskliBlue-500"
+              />
             </div>
 
-            <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">
+            <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-riskliBlue-500 mb-1 sm:mb-2">
               {title}
             </h3>
 
-            <p className="text-black max-w-[100px] sm:max-w-[150px] lg:max-w-xs text-[10px] sm:text-xs md:text-sm lg:text-base font-[450] leading-tight sm:leading-relaxed">
+            <p className="text-black max-w-[100px] lg:max-w-[200px] text-[10px] sm:text-xs md:text-sm lg:text-base font-[450] leading-tight sm:leading-relaxed">
               {description}
             </p>
           </div>
